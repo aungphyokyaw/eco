@@ -16,8 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-//Route fro Category
-Route::get('category-list', 'CategoryController@categoryList')->name('categoryList');
-Route::get('add-new-category', 'CategoryController@addNewCategory')->name('addNewCategory');
-Route::post('create', 'CategoryController@saveCategory')->name('saveCategory');
